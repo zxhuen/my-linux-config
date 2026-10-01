@@ -317,7 +317,7 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 
 -- SCREENSHOT
 
-hl.bind("PRINT", hl.dsp.exec_cmd("grim /run/media/zxhuen/B6AAC4B4AAC47303/screenshots/"))
+hl.bind("PRINT", hl.dsp.exec_cmd("grim /run/media/zxhuen/B6AAC4B4AAC47303/screenshots/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"))
 
 
 --------------------------------
