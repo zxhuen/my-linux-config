@@ -270,6 +270,12 @@ hl.device({
     sensitivity = -0.5,
 })
 
+-- MY MOUSE SENSITIVITY
+hl.device({
+    name        = "asustek-rog-keris-wireless-aimpoint",
+    sensitivity = 0,
+})
+
 
 ---------------------
 ---- KEYBINDINGS ----
