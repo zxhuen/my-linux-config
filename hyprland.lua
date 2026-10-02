@@ -51,13 +51,25 @@ local menu        = "rofi -show drun"
 -- end)
 
 hl.on("hyprland.start", function()
+
+    -- Status bar
     hl.exec_cmd("waybar")
+
+    -- Wallpaper / desktop startup
     hl.exec_cmd("~/.config/hypr/scripts/startup.sh")
+
+    -- Bluetooth tray applet
     hl.exec_cmd("blueman-applet")
+
+    -- Notification daemon
     hl.exec_cmd("swaync")
+
+    -- Idle management
     hl.exec_cmd("hypridle")
-    hl.exec_cmd("systemctl --user start hyprpolkitagent")
+
+    -- Polkit authentication
     hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
+
 end)
 
 
