@@ -405,6 +405,6 @@ hl.window_rule({
 
     float = true,
     size = "600 250",
-    center = true,
+    move = "200 700",
     workspace = "3",
 })
