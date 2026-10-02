@@ -69,6 +69,10 @@ hl.on("hyprland.start", function()
 
     -- Polkit authentication
     hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
+    -- CAVA
+
+    hl.exec_cmd("kitty --class cava cava")
+   
 
 end)
 
@@ -387,4 +391,20 @@ hl.window_rule({
 
     move  = "20 monitor_h-120",
     float = true,
+})
+
+--CAVA CONFIG
+hl.workspace_rule({
+    workspace = "3",
+    monitor = "HDMI-A-1",
+})
+
+hl.window_rule({
+    name = "cava-window",
+    match = { class = "^cava$" },
+
+    float = true,
+    size = "600 250",
+    center = true,
+    workspace = "3",
 })
