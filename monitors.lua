@@ -12,13 +12,3 @@ hl.monitor({
     scale = 1,
 })
 
-
-hl.window_rule({
-    name = "cava-window",
-    match = { class = "^cava$" },
-
-    float = true,
-    size = "600 250",
-    center = true,
-    workspace = "3",
-})
