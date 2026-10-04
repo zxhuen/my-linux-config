@@ -71,6 +71,10 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
     -- VSCODE encryption
     hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
+    -- KEYRING AUTO LOGIN
+    hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &")
+    hl.exec_cmd("gnome-keyring-daemon --start --components=secrets,ssh,pkcs11")
+
 
    
 
